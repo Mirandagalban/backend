@@ -55,7 +55,7 @@ class ProductManager {
     this.products.push(product);
   };
 }
-
+/*
 //testing
 const manejadorProductos = new ProductManager();
 manejadorProductos.getProducts();
@@ -78,6 +78,8 @@ manejadorProductos.addProduct(
   25
 );
 manejadorProductos.getProductById(1);
-manejadorProductos.getProductById(4);
+manejadorProductos.getProductById(4);*/
 
-export default ProductManager;
+module.exports = {
+  ProductManager,
+};
