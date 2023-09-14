@@ -6,7 +6,7 @@ const env = async () => {
   const productsEnv = await manager.getProducts();
   console.log(productsEnv);
 
-  const productoTest = {
+  const newProduct = {
     title: "producto prueba",
     description: "Este es un producto prueba",
     price: 200,
@@ -15,15 +15,10 @@ const env = async () => {
     stock: 25,
   };
 
-  await manager.addProduct(productoTest);
+  await manager.addProduct(newProduct);
 
   const productsResult = await manager.getProducts();
   console.log(productsResult);
 };
 
 env();
-const manejadorProductos = new ProductManager();
-manejadorProductos.getProducts();
-console.log(manejadorProductos.products);
-manejadorProductos.addProduct();
-console.log(manejadorProductos.getProducts());

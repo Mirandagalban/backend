@@ -42,7 +42,7 @@ class ProductManager {
     try {
       const products = await this.getProducts();
       // creacion de id
-      if (this.products.length == 0) {
+      if (this.products.length === 0) {
         product.id = 1;
       } else {
         product.id = this.products.id + 1;
